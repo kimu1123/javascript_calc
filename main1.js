@@ -51,22 +51,22 @@ if(result.value == "0" &&val =="0"){
   return ["+","-","*","/" ].includes(result.value.toString().slice(-1));
 }
     
-    function shosu_click(val){ 　　//数字キー
+    function shosu_click(val){ 　　
    if(is_calc)  result.value = "0";
    is_calc = false;
-
-if(result.value == "0" &&val =="0"){
+   
+   if(result.value == "0" &&val =="0"){
    result.value ="0";
   }else if(result.value =="0" && val=="."){
     result.value ="0.";
-  }else if(result.value =="0"){
+}else if(result.value =="0"){
     result.value=val;
     }else{
         result.value+=val;
     }
-  }
-  
- function shosu_click(val){
+}
+
+function shosu_click(val){
    result.value += "."; 
 	document.getElementById("output").innerHTML = result.value;
 }
@@ -75,3 +75,57 @@ function shosu_click(val)  {
 	if (result.value.indexOf(".") < 0) result.value+= "."; 
 	document.getElementById("output").innerHTML = result.value;
 }
+   
+
+function shosu_click(val){ 　　
+   if(is_calc)  result.value = "0";
+   is_calc = false;
+   
+   if(result.value == "0" &&val =="0"){
+   result.value ="0";
+  }else if(result.value =="0" && val=="."){
+    result.value ="0.";
+}else if(result.value =="0"){
+    result.value=val;
+    }else{
+        result.value+=val;
+    }
+}
+
+function shosu_click(val){
+   result.value += "."; 
+	document.getElementById("output").innerHTML = result.value;
+}
+
+function shosu_click(val)  { 
+	if (result.value.indexOf(".") < 0) result.value+= "."; 
+	document.getElementById("output").innerHTML = result.value;
+}
+   
+
+function zero_click(val){ 　　
+   if(is_calc)  result.value = "0";
+   is_calc = false;
+   
+   if(result.value == "0" &&val =="0"){
+   result.value ="0";
+  }else if(result.value =="0" && val=="."){
+    result.value ="0.";
+}else if(result.value =="0"){
+    result.value=val;
+    }else{
+        result.value+=val;
+    }
+}
+
+function zero_click(val){
+   result.value += "00"; 
+	document.getElementById("output").innerHTML = result.value;
+}
+
+function zero_click(val)  { 
+	if (result.value.indexOf("00") < 0) result.value+= "00"; 
+	document.getElementById("output").innerHTML = result.value;
+}
+   
+
